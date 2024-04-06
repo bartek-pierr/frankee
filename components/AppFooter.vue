@@ -11,8 +11,8 @@
                 <NuxtLink to="/">Strona Główna</NuxtLink>
                 <NuxtLink to="/o-nas">O Nas</NuxtLink>
                 <NuxtLink to="/oferta">Oferta</NuxtLink>
-                <NuxtLink to="realizacje">Realizacje</NuxtLink>
-                <NuxtLink to="kontakt">Kontakt</NuxtLink>
+                <NuxtLink to="/realizacje">Realizacje</NuxtLink>
+                <NuxtLink to="/kontakt">Kontakt</NuxtLink>
             </div>
             <div class="footer__offer">
                 <h4>Oferta</h4>

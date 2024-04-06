@@ -45,7 +45,7 @@ const { data } = await useFetch('/api/frankeeData')
 .mainPage {
   width: 100%;
   height: 100vh;
-  background-color: $color-white;
+  background-color: $color-primary;
 
   &__wrapper {
     padding: 10rem;

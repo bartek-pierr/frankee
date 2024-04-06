@@ -21,10 +21,10 @@
                 </div>
             </li>
             <li>
-                <NuxtLink to="realizacje">Realizacje</NuxtLink>
+                <NuxtLink to="/realizacje">Realizacje</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="kontakt">Kontakt</NuxtLink>
+                <NuxtLink to="/kontakt">Kontakt</NuxtLink>
             </li>
         </ul>
         <div class="mainHeader__socials">

@@ -110,6 +110,7 @@
     & div {
       display: flex;
       margin-top: 6rem;
+      margin-bottom: 4rem;
 
       & div {
         flex: 10%;
@@ -184,7 +185,7 @@
       flex: 25%;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
 
       & h4 {
         font-size: 8rem;

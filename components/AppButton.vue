@@ -19,11 +19,10 @@ export default {
 
 <style lang="scss" scoped>
 button {
-  color: $color-white;
+  color: $color-black;
   text-transform: uppercase;
   font-size: 1.2rem;
-  border: none;
-  background-color: $color-black;
+  border: 2px solid $color-black;
   padding: 0.8rem 2rem;
   transition: all 0.3s ease-in-out;
 
@@ -31,6 +30,7 @@ button {
     scale: 1.1;
     color: $color-black;
     background-color: $color-primary;
+    border: 2px solid transparent;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="websites">
-    <h2>Strony Internetowe</h2>
+  <SectionHeader sectionName="Strony WWW" />
   </section>
 </template>
 

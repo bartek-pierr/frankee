@@ -3,7 +3,7 @@
         <section class="footer">
             <div class="footer__contact">
                 <NuxtLink to="/">Frankee.</NuxtLink>
-                <a href="tel:665865789"><span>tel. 665 865 789</span></a>
+                <a href="tel:665865789"><span>tel. <span id="footerPhoneNumber">{{ data.config.phone }}</span></span></a>
                 <a href=""><span>mail</span></a>
             </div>
             <div class="footer__navigation">
@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+const {data} = await useFetch('/api/frankeeData')
 </script>
 
 <style lang="scss" scoped>

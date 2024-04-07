@@ -1,9 +1,7 @@
 <template>
-    <section class="portfolio">
-        <div class="portfolio__partners grid grid-cols-4 gap-5">
-
-        </div>
-    </section>
+  <section class="portfolio">
+  <SectionHeader sectionName="Realizacje" />
+  </section>
 </template>
 
 <script setup>
@@ -13,4 +11,13 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
 </style>

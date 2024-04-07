@@ -35,6 +35,36 @@
       <p>Urzymuj zainteresowanie i <span>sprzedawaj!</span></p>
     </div>
   </section>
+
+  <section class="cooperation">
+    <h2>Zobacz, jak wygląda współpraca <span>z agencją social media.</span></h2>
+    <div class="cooperation__steps">
+      <div>
+        <h4>01.</h4>
+        <p>Skontaktuj się - zadzwoń, napisz maila lub odezwij się na Instagramie</p>
+      </div>
+      <div>
+        <h4>02.</h4>
+        <p>Przeanalizujemy dotychczasowe działania</p>
+      </div>
+      <div>
+        <h4>03.</h4>
+        <p>Ustalimy nową strategię</p>
+      </div>
+      <div>
+        <h4>04.</h4>
+        <p>Po zaakceptowaniu ruszymy ze zmianami</p>
+      </div>
+      <div>
+        <h4>05.</h4>
+        <p>Przedstawimy wyniki</p>
+      </div>
+      <div>
+        <h4>06.</h4>
+        <p>Dopasujemy zmiany lub poprawki</p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -79,7 +109,7 @@
 
     & div {
       display: flex;
-      margin-top: 4rem;
+      margin-top: 6rem;
 
       & div {
         flex: 10%;
@@ -126,6 +156,46 @@
 
     & span {
       font-weight: 800;
+    }
+  }
+}
+
+.cooperation {
+  padding: 4rem 10rem;
+  background-color: $color-white;
+
+  & h2 {
+    font-size: 4rem;
+    color: $color-primary;
+    font-weight: 600;
+    margin-bottom: 4rem;
+
+    & span {
+      color: $color-black;
+    }
+  }
+
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & div {
+      flex: 25%;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      & h4 {
+        font-size: 8rem;
+        font-weight: 700;
+        color: $color-primary;
+        opacity: 0.4;
+      }
+
+      & p {
+        font-size: 2rem;
+      }
     }
   }
 }

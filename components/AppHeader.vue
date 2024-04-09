@@ -1,7 +1,7 @@
 <template>
     <header class="mainHeader shadow-md">
         <div class="mainHeader__logoWrapper">
-            <a href="/">Frankee.</a>
+            <a href="/">Frankee<span>.</span></a>
         </div>
         <ul class="mainHeader__navigationWrapper">
             <li>
@@ -11,7 +11,7 @@
                 <NuxtLink to="/o-nas">O Nas</NuxtLink>
             </li>
             <li @mouseover="toggleMenu" class="dropdownEnabler">
-                <NuxtLink to="/oferta">Oferta</NuxtLink>
+                <NuxtLink to="/oferta">Oferta &darr;</NuxtLink>
                 <div class="dropdownEnabler__dropdown shadow-md">
                     <a href="/oferta/branding">Branding</a>
                     <a href="/oferta/content">Content</a>
@@ -27,11 +27,11 @@
             </li>
         </ul>
         <div class="mainHeader__socials">
-            <a href="https://www.facebook.com/profile.php?id=100095526155357" target="_blank"><img src="../assets/images/facebook-icon.png" alt=""></a>
-            <a href="https://www.instagram.com/frankee_minimal/" target="_blank"><img src="../assets/images/instagram-icon.png" alt=""></a>
-            <a href="https://www.tiktok.com/@frankee_minimal" target="_blank"><img src="../assets/images/tiktok-icon.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100095526155357" target="_blank"><img src="../assets/images/icons/facebook-icon.png" alt=""></a>
+            <a href="https://www.instagram.com/frankee_minimal/" target="_blank"><img src="../assets/images/icons/instagram-icon.png" alt=""></a>
+            <a href="https://www.tiktok.com/@frankee_minimal" target="_blank"><img src="../assets/images/icons/tiktok-icon.png" alt=""></a>
         </div>
-        <AppButton @click="showAlert()" buttonText="Wycena" class="shadow-md" />
+        <AppButton buttonText="Wycena" class="shadow-md" />
     </header>
 </template>
 
@@ -57,7 +57,7 @@ const closeMenuOnMouseLeave = () => {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 10rem;
     height: 6rem;
     background-color: $color-white;
     z-index: 1000;
@@ -69,6 +69,10 @@ const closeMenuOnMouseLeave = () => {
         font-weight: 900;
         font-size: 3rem;
         text-decoration: none;
+
+        & span {
+            color: $color-primary;
+        }
     }
 
     &__navigationWrapper {

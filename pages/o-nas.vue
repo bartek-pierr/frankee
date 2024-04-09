@@ -1,8 +1,8 @@
 <template>
   <section class="about">
     <div class="about__header">
-      <h2>Kilka słów o<br><span>Frankee.</span></h2>
-      <img src="../assets/images/arrow-icon.png" alt="">
+      <h2>Kilka słów o <span>Frankee.</span></h2>
+      <img src="../assets/images/icons/arrow-icon.png" alt="">
       <div class="about__props">
         <div class="about__props--stepOne">
           <h4>01.</h4>
@@ -92,7 +92,7 @@ useHead({
     & h2 {
       margin-left: 10rem;
       font-size: 4rem;
-      font-weight: 800;
+      font-weight: 400;
       line-height: 10rem;
 
       & span {

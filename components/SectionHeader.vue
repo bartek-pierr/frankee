@@ -2,7 +2,7 @@
   <div class="section">
     <div class="section__header">
       <h2>{{ sectionName }}</h2>
-      <img src="../assets/images/arrow-icon.png" alt="">
+      <img src="../assets/images/icons/arrow-icon.png" alt="">
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
       position: absolute;
       right: 10rem;
       bottom: 4rem;
-      opacity: 0.1;
+      opacity: 0.8;
     }
 
     & h2 {

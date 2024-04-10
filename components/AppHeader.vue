@@ -10,13 +10,13 @@
             <li>
                 <NuxtLink to="/o-nas">O Nas</NuxtLink>
             </li>
-            <li @mouseover="toggleMenu" class="dropdownEnabler">
+            <li @click="toggleMenu" class="dropdownEnabler">
                 <NuxtLink to="/oferta">Oferta &darr;</NuxtLink>
                 <div class="dropdownEnabler__dropdown shadow-md">
-                    <a href="/oferta/branding">Branding</a>
-                    <a href="/oferta/content">Content</a>
-                    <a href="/oferta/socials">Socials</a>
-                    <a href="/oferta/strony-www">Strony WWW</a>
+                    <a href="#branding">Branding</a>
+                    <a href="#content">Content</a>
+                    <a href="#socials">Socials</a>
+                    <a href="#websites">Strony WWW</a>
                 </div>
             </li>
             <li>
@@ -147,7 +147,7 @@ const closeMenuOnMouseLeave = () => {
 
         & a {
             padding-bottom: 0.5rem;
-            text-wrap: nowrap;
+            white-space: nowrap;
             height: 100%;
             width: 100%;
 

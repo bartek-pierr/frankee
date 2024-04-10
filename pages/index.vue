@@ -76,7 +76,7 @@
       <AppButton buttonText="Kontakt" class="contact__button shadow-md" />
     </div>
     <div class="contact__interactivTextbox">
-      <p>Cześć, jestem Basia,<br>w czym mogę Ci pomóc?</p>
+      <p class="typing-demo">Cześć, jestem Basia, w czym mogę Ci pomóc?</p>
     </div>
   </section>
 </template>
@@ -275,13 +275,39 @@
   }
 
   &__interactivTextbox {
+    width: 54rem;
     position: absolute;
-    bottom: 8rem;
-    left: 60rem;
+    bottom: 4rem;
+    left: 40rem;
     background-color: $color-white;
     padding: 2rem;
     border: 0.2rem solid $color-black;
     border-radius: 0.8rem;
+    display: grid;
+  place-items: center;
+  }
+}
+
+.typing-demo {
+  width: 54rem;
+  animation: typing 4s steps(22), blink 1s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2rem;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
 }
 </style>

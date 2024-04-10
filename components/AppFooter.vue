@@ -46,6 +46,12 @@ const {data} = await useFetch('/api/frankeeData')
     background-color: $color-black;
     color: $color-white;
 
+    &__contact, &__navigation, &__offer, &__socials {
+        & a:hover {
+            color: $color-primary;
+        }
+    }
+
     &__contact {
         display: flex;
         flex-direction: column;
@@ -61,6 +67,10 @@ const {data} = await useFetch('/api/frankeeData')
                 color: $color-white;
                 font-size: 1.6rem;
                 font-weight: 400;
+
+                &:hover {
+                    color: $color-primary;
+                }
             }
         }
     }

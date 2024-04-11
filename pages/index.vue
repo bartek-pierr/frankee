@@ -79,6 +79,28 @@
       <p class="typing-demo">Cześć, jestem Basia, w czym mogę Ci pomóc?</p>
     </div>
   </section>
+
+  <section class="about">
+    <h2>Z nami zyskasz znacznie <span>więcej</span></h2>
+    <p>Oferujemy kompleksową obsługę marketingową, a wyróżniają nas:</p>
+    <div class="about__icons">
+      <div>
+        <img src="assets/images/home/commitment-icon.svg" alt="">
+        <h3>Zaangażowanie</h3>
+        <p>Analizujemy, aktywnie szukamy nowych możliwości i wdrażamy je. Możesz liczyć na naszą proaktywność.</p>
+      </div>
+      <div>
+        <img src="assets/images/home/relations-icon.svg" alt="">
+        <h3>Relacje</h3>
+        <p>Partnerskie, uczciwe relacje to dla nas podstawa. Jesteśmy z Tobą w ciągłym kontakcie i zawsze do dyspozycji.</p>
+      </div>
+      <div>
+        <img src="assets/images/home/work-style-icon.svg" alt="">
+        <h3>Styl pracy</h3>
+        <p>jeden specjalista obsługuje maksymalnie kilka projektów, co pozwala nam pracować dokładnie i skutecznie.</p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -147,7 +169,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem 10rem 4rem 10rem;
+  padding: 4rem 10rem 0 10rem;
   background-color: $color-white;
 
   &__stepOne,
@@ -308,6 +330,55 @@
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+.about {
+  background-color: $color-white;
+  padding: 4rem 10rem;
+  text-align: center;
+
+  & h2 {
+    font-size: 4rem;
+    color: $color-primary;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    & span {
+      color: $color-black;
+    }
+  }
+
+  & p {
+    font-size: 1.8rem;
+  }
+
+  &__icons {
+    margin-top: 4rem;
+    display: flex;
+
+    & div {
+      flex: 30%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & img {
+        height: 18rem;
+        margin-bottom: 1rem;
+      }
+
+      & h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $color-primary;
+      }
+
+      & p {
+        margin-top: 1rem;
+      }
+    }
   }
 }
 </style>

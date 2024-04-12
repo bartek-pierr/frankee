@@ -92,7 +92,8 @@
       <div>
         <img src="assets/images/home/relations-icon.svg" alt="">
         <h3>Relacje</h3>
-        <p>Partnerskie, uczciwe relacje to dla nas podstawa. Jesteśmy z Tobą w ciągłym kontakcie i zawsze do dyspozycji.</p>
+        <p>Partnerskie, uczciwe relacje to dla nas podstawa. Jesteśmy z Tobą w ciągłym kontakcie i zawsze do dyspozycji.
+        </p>
       </div>
       <div>
         <img src="assets/images/home/work-style-icon.svg" alt="">
@@ -115,6 +116,8 @@
     height: 80vh;
     background-image: url(assets/images/home/hero-bg.png);
     background-size: cover;
+    background-attachment: fixed;
+
 
     &--text {
       text-align: center;
@@ -258,6 +261,7 @@
   background-image: url(assets/images/home/contact-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -306,7 +310,7 @@
     border: 0.2rem solid $color-black;
     border-radius: 0.8rem;
     display: grid;
-  place-items: center;
+    place-items: center;
   }
 }
 
@@ -326,7 +330,7 @@
     width: 0
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent

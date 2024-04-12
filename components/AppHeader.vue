@@ -36,7 +36,6 @@
 </template>
 
 <script setup>
-
 const toggleMenu = () => {
     const dropdown = document.querySelector('.dropdownEnabler__dropdown');
     const dropdownEnabler = document.querySelector('.dropdownEnabler');

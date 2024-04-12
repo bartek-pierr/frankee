@@ -97,7 +97,7 @@
       <div>
         <img src="assets/images/home/work-style-icon.svg" alt="">
         <h3>Styl pracy</h3>
-        <p>jeden specjalista obsługuje maksymalnie kilka projektów, co pozwala nam pracować dokładnie i skutecznie.</p>
+        <p>Jeden specjalista obsługuje maksymalnie kilka projektów, co pozwala nam pracować dokładnie i skutecznie.</p>
       </div>
     </div>
   </section>
@@ -359,7 +359,7 @@
 
     & div {
       flex: 30%;
-      padding: 1rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;

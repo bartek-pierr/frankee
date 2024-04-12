@@ -1,12 +1,12 @@
 <template>
   <section class="portfolio">
-  <SectionHeader sectionName="Realizacje" />
   <LightGallery />
   </section>
 </template>
 
 <script setup>
 import { onMounted } from 'vue';
+import GLightbox from 'glightbox';
 
 onMounted(() => {
   function init(e) {
@@ -18,7 +18,6 @@ onMounted(() => {
 
 window.addEventListener('click', init, false);
 });
-
 useHead({
   title: 'Frankee. | Realizacje'
 })
